@@ -1,0 +1,52 @@
+ →  User - Completed @done (13-04-27 13:05)
+ →  Role - Completed @done (13-04-27 13:05)
+ ■ Workbench - ORM
+ ■ Laravel Generator
+
+
+
+BUSINESS
+php artisan generate:scaffold business --fields="user_id:integer
+, fullName:string, businessName:string, businessLogo:string, businessCurrency:st
+ring, businessTimeZone:string, businessAddressLine1:string, businessAddressLine2
+:string, businessCountry:string, businessState:string, businessCity:string, busi
+nessPincode:string"
+
+
+CUISINE
+php artisan generate::scaffold cuisine --fields="cuisineName:string"
+
+RESTURANT
+php artisan generate:scaffold --fields="business_id:integer, cuisine_id:integer, restuarantName:string, resturantPhoto:string"
+
+
+RESTAURANT
+php artisan generate:scaffold --fields="business_id:integer, cuisine_id:integer, restaurantName:string, restaurantPhoto:string"
+
+
+
+
+RESTAURANT LOCATION
+php artisan generate:scaffold restaurantLocation --fields="restaurant_id:integer, restaurantPhone:string, restaurantMobile:string, restaurantEmail:string, restaurantAddressLine1:string, restaurantAddressLine2:string, restaurantCity:string, restaurantState:string, restaurantCountry:string, restaurantPincode:string, restaurantWorkingHours:string"
+
+MENUCATEGORIES
+php artisan generate:scaffold menucategories --fields="restaurant_id:integer,categoryName:string, categoryDescription:string, categoryPosition:string, availableFrom:string, availableTill:string, categoryShow:string"
+
+MENUSUBCATEGORIES
+php artisan generate:scaffold menusubcategories --fields="menu_category_id:integer, subCategoryName:string, subCategoryDescription:string, subCategoryPosition:string, availableFrom:string, availableTill:string, subCategoryShow:string"
+
+
+MENUITEMS
+php artisan generate:scaffold menuitems --fields="category_id:integer, itemName:string, itemDescription:string, itemPrice:string, itemPosition:string, availableFrom::string, availableTill:string, itemShow:string"
+
+
+MENUITEMSIMAGES
+php artisan generate:scaffold menuitemimages --fields="item_id:integer, itemImageName:string"
+
+
+MENUITEMAVAILABILITY
+php artisan generate:scaffold menuitemavailability --fields="item_id:integer, availMonday:string, availTuesday:string, availWednesday:string, availThursday:string, availFriday:string, availSaturday:string, availSunday:string"
+
+
+CATEGORYAVAILABILITY
+php artisan generate:scaffold availability --fields="item_id:integer,  availMonday:string, availTuesday:string, availWednesday:string, availThursday:string, availFriday:string, availSaturday:string, availSunday:string"

@@ -1,0 +1,35 @@
+<div class="control-group">
+      
+         <div class="controls">
+           <label class="checkbox inline">
+             {{ Form::checkbox('availMonday', '1', '1') }} Mon
+             
+           </label>
+           <label class="checkbox inline">
+               {{ Form::checkbox('availTuesday','1', '1') }} Tue
+           </label>
+           <label class="checkbox inline">
+             {{ Form::checkbox('availWednesday','1', '1') }} Wed
+           </label>
+
+                      <label class="checkbox inline">
+            {{ Form::checkbox('availThursday', '1', '1') }} Thu
+           </label>
+
+
+           <label class="checkbox inline">
+              {{ Form::checkbox('availFriday','1', '1') }} Fri
+           </label>
+
+
+           <label class="checkbox inline">
+            {{ Form::checkbox('availSaturday','1', '1') }} Sat
+           </label>
+
+            <label class="checkbox inline">
+             {{ Form::checkbox('availSunday','1', '1') }} Sun
+           </label>
+
+
+         </div>
+       </div>
